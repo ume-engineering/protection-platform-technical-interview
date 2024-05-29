@@ -20,6 +20,32 @@ The product team have identified the following requirements:
 * Send the 'Buy Now' email to the customer if a quote is available.
 * If there are no quotes send the 'Unable to offer cover' email to the customer.
 
+Assume the Underwriting Rules Engine is deployed as a microservice.
+
+It accepts a `POST` request to `/quote` containing:
+```json
+{
+    "height": 180,
+    "weight": 80,
+    "occupation": "Accountant"
+}
+```
+
+if a quote is available it will respond with:
+```json
+{
+    "decision": "QUOTE",
+    "premium": 450.00
+}
+```
+if no quote is available it will respond with:
+```json
+{
+    "decision": "DECLINE"
+}
+```
+⚠️⚠️ for this excercise you should not need a running instance of the Underwriting Rules Engine ⚠️⚠️
+
 ## Task
 * Using Test Driven Devleopment (TDD) implement a simple application that meets the above requirements.
 
@@ -30,6 +56,7 @@ Note: This is primarily an excercise in domain modelling so you don't need to wo
 * Infrastructure or deploying to the cloud
 * Enhancing or extending the build process
 * Bringing in additional frameworks or libraries
+* Modifying/Updating/Extending the Underwriting Rules Engine microservice.
 
 ## What we're looking for
 * Clean code.
