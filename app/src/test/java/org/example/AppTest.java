@@ -4,11 +4,14 @@
 package org.example;
 
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 class AppTest {
-    @Test void appHasAGreeting() {
+    @Test
+    void appHasAGreeting() {
         App classUnderTest = new App();
-        assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
+
+        assertThat(classUnderTest.getGreeting()).isEqualTo("Hello World!");
     }
 }
