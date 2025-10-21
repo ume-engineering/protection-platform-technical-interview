@@ -14,7 +14,7 @@ The product team have identified the following requirements:
     * Each Customer on the application must have at least one insurance product selected
     * Each Customer must have provided their email address.
     * On the day the policy starts all customers must not be over 80 years old.
-* If the above critieria are satisified send an email to each customer inviting them to complete their questions.
+* If the above criteria are satisfied send an email to each customer inviting them to complete their questions.
 * Each customer must provide their height, weight and occupation.
 * Once the above questions have been captured obtain a decision and premium from the Underwriting Rules Engine.
 * Send the 'Buy Now' email to the customer if a quote is available.
@@ -44,12 +44,12 @@ if no quote is available it will respond with:
     "decision": "DECLINE"
 }
 ```
-⚠️⚠️ for this excercise you should not need a running instance of the Underwriting Rules Engine ⚠️⚠️
+⚠️⚠️ for this exercise you should not need a running instance of the Underwriting Rules Engine ⚠️⚠️
 
 ## Task
 * Implement a simple application that meets the above requirements.
 
-Note: This is primarily an excercise in domain modelling so you don't need to worry about:
+Note: This is primarily an exercise in domain modelling so you don't need to worry about:
 * Writing a RESTful/web API or User interface
 * Databases or persistence
 * Authentication or Authorisation
